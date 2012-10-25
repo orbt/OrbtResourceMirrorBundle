@@ -6,11 +6,11 @@
 
     <!--
     <parameters>
-        <parameter key="zth_me_asset_mirror.example.class">ZthMe\AssetMirrorBundle\Example</parameter>
+        <parameter key="anu_resource_mirror.example.class">ANU\Bundle\ResourceMirrorBundle\Example</parameter>
     </parameters>
 
     <services>
-        <service id="zth_me_asset_mirror.example" class="%zth_me_asset_mirror.example.class%">
+        <service id="anu_resource_mirror.example" class="%anu_resource_mirror.example.class%">
             <argument type="service" id="service_id" />
             <argument>plain_value</argument>
             <argument>%parameter_name%</argument>
