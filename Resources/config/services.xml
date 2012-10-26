@@ -6,11 +6,11 @@
 
     <!--
     <parameters>
-        <parameter key="anu_resource_mirror.example.class">ANU\Bundle\ResourceMirrorBundle\Example</parameter>
+        <parameter key="orbt_resource_mirror.example.class">Orbt\Bundle\ResourceMirrorBundle\Example</parameter>
     </parameters>
 
     <services>
-        <service id="anu_resource_mirror.example" class="%anu_resource_mirror.example.class%">
+        <service id="orbt_resource_mirror.example" class="%orbt_resource_mirror.example.class%">
             <argument type="service" id="service_id" />
             <argument>plain_value</argument>
             <argument>%parameter_name%</argument>

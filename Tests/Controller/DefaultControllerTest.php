@@ -1,6 +1,6 @@
 <?php
 
-namespace ANU\Bundle\ResourceMirrorBundle\Tests\Controller;
+namespace Orbt\Bundle\ResourceMirrorBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
