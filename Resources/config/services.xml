@@ -7,8 +7,10 @@
     <parameters>
         <parameter key="orbt_resource_mirror.factory.class">Orbt\ResourceMirror\ResourceMirrorFactory</parameter>
         <parameter key="orbt_resource_mirror.mirror.class">Orbt\ResourceMirror\ResourceMirror</parameter>
+        <!--
         <parameter key="orbt_resource_mirror.base_url" />
         <parameter key="orbt_resource_mirror.directory" />
+        -->
     </parameters>
 
     <services>
