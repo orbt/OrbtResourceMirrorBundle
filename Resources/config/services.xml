@@ -6,10 +6,17 @@
 
     <parameters>
         <parameter key="orbt_resource_mirror.factory.class">Orbt\ResourceMirror\ResourceMirrorFactory</parameter>
+        <parameter key="orbt_resource_mirror.mirror.class">Orbt\ResourceMirror\ResourceMirror</parameter>
+        <parameter key="orbt_resource_mirror.base_url" />
+        <parameter key="orbt_resource_mirror.directory" />
     </parameters>
 
     <services>
         <service id="orbt_resource_mirror.factory" class="%orbt_resource_mirror.factory.class%">
+            <argument type="service" id="service_container" />
+        </service>
+        <!-- TODO Implement configuration to set up mirror base URL and directory. -->
+        <service id="orbt_resource_mirror.mirror" class="%orbt_resource_mirror.mirror.class%">
             <argument type="service" id="service_container" />
         </service>
     </services>
