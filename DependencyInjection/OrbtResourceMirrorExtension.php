@@ -28,7 +28,7 @@ class OrbtResourceMirrorExtension extends Extension
         }
 
         $container->setParameter('orbt_resource_mirror.base_url', $config['base_url']);
-        $container->setParameter('orbt_resource_mirror.directory', $config['directory']);
+        $container->setParameter('orbt_resource_mirror.directory', realpath($config['directory']));
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
