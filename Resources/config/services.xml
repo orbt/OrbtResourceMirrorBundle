@@ -4,17 +4,13 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
-    <!--
     <parameters>
-        <parameter key="orbt_resource_mirror.example.class">Orbt\Bundle\ResourceMirrorBundle\Example</parameter>
+        <parameter key="orbt_resource_mirror.factory.class">Orbt\ResourceMirror\ResourceMirrorFactory</parameter>
     </parameters>
 
     <services>
-        <service id="orbt_resource_mirror.example" class="%orbt_resource_mirror.example.class%">
-            <argument type="service" id="service_id" />
-            <argument>plain_value</argument>
-            <argument>%parameter_name%</argument>
+        <service id="orbt_resource_mirror.factory" class="%orbt_resource_mirror.factory.class%">
+            <argument type="service" id="service_container" />
         </service>
     </services>
-    -->
 </container>
