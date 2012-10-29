@@ -13,11 +13,15 @@
 
     <services>
         <service id="orbt_resource_mirror.factory" class="%orbt_resource_mirror.factory.class%">
-            <argument type="service" id="service_container" />
+            <argument type="service" id="event_dispatcher" />
         </service>
         <!-- TODO Implement configuration to set up mirror base URL and directory. -->
-        <service id="orbt_resource_mirror.mirror" class="%orbt_resource_mirror.mirror.class%">
-            <argument type="service" id="service_container" />
+        <service id="orbt_resource_mirror.mirror"
+                 class="%orbt_resource_mirror.mirror.class%"
+                 factory-service="orbt_resource_mirror.factory"
+                 factory-method="createMirror">
+            <argument>%orbt_resource_mirror.base_url%</argument>
+            <argument>%orbt_resource_mirror.directory%</argument>
         </service>
     </services>
 </container>
