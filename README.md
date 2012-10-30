@@ -1,6 +1,8 @@
 Resource Mirror Bundle
 ======================
 
+Basic Symfony dependency injection bundle for the Resource Mirror library.
+
 This bundle provides the following services:
 
 * `orbt_resource_mirror.factory`: Resource mirror factory, useful as a factory service to create additional mirrors.
