@@ -3,6 +3,7 @@
 namespace Orbt\Bundle\ResourceMirrorBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
+use Symfony\Component\DependencyInjection\Compiler\PassConfig;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 class OrbtResourceMirrorBundle extends Bundle
@@ -11,6 +12,6 @@ class OrbtResourceMirrorBundle extends Bundle
     {
         parent::build($container);
 
-        $container->addCompilerPass(new DependencyInjection\Compiler\RegisterResourceSubscribersPass());
+        $container->addCompilerPass(new DependencyInjection\Compiler\RegisterResourceSubscribersPass(), PassConfig::TYPE_BEFORE_REMOVING);
     }
 }
